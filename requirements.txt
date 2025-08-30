@@ -1,0 +1,12 @@
+aiohttp
+numpy
+discord==2.3.2
+easyocr==1.7.2
+fuzzywuzzy
+gspread
+opencv-python==4.11.0.86
+oauth2client
+pandas
+Pillow
+scikit-image==0.24.0
+ImageHash==4.3.2

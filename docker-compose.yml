@@ -1,0 +1,29 @@
+services:
+  alphabot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: alphabot:local
+    restart: unless-stopped
+    environment:
+      ALLOWED_CHANNEL_IDS: ${ALLOWED_CHANNEL_IDS:-1351265799561809920}
+      SAVE_ICONS: ${SAVE_ICONS:-true}
+      INITIAL_RECENT_HOURS: ${INITIAL_RECENT_HOURS:-48}
+      RECURRING_RECENT_HOURS: ${RECURRING_RECENT_HOURS:-1}
+      GOOGLE_SPREADSHEET_NAME: "${GOOGLE_SPREADSHEET_NAME:-AlphaBot Match Data v1}"
+    secrets:
+      - discord_token
+      - google_api_creds
+    volumes:
+      - download:/app/downloads
+      - output:/app/output
+
+secrets:
+  discord_token:
+    file: ./secrets/discord_token
+  google_api_creds:
+    file: ./secrets/google_api_creds.json
+
+volumes:
+  download:
+  output:
