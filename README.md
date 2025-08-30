@@ -38,6 +38,10 @@ Required secrets (mounted as Docker secrets):
 - `./secrets/discord_token` → available in the container at `/run/secrets/discord_token`
 - `./secrets/google_api_creds.json` → available in the container at `/run/secrets/google_api_creds`
 
+## Viewing Images
+
+There is a simple web app hosted on [localhost:8080](http://localhost:8080/) to browse the download/output images
+
 ## Volumes and Data
 
 This compose file defines two named volumes that persist data outside the container:
