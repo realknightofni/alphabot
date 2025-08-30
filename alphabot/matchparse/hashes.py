@@ -510,7 +510,7 @@ HEROES = {'Alicia': ['000001c0703c0701c2fcff3fd', '000001c0703c070182fcff2fc', '
           'Wukong': ['004001c0711e07c1f07e0e6c3', '184201c0711f07e1fc7f02641'],
           'Yukimura': ['80400000303e0f41ecb933eef'],
           'Bedivere': ['00000080301c0703f1fc3f3fe'],
-          'Lina': ['00400100781e0701e09c8f37f'],
+          'Linh': ['00400100781e0701e09c8f37f'],
  }
 
 
